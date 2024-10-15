@@ -1,0 +1,145 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0e1dc; /* Soft background matching your main page */
+    color: #333; /* Darker color for text contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #f0e1dc; /* Header matching the page background */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header img {
+    width: 24px;
+    cursor: pointer;
+}
+
+/* Card Section */
+.card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    padding: 20px;
+    margin-top: 100px; /* Spacing to push it below the header */
+    position: relative;
+    text-align: left;
+}
+
+.card h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+/* Right Arrow for the card */
+.arrow-right {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.arrow-right::after {
+    content: '>';
+    color: white;
+    font-size: 1.2em;
+}
+
+/* Section for Project Descriptions */
+section {
+    padding: 40px;
+    text-align: left;
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+section p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Styling for Images inside the Projects */
+section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    color: #999;
+}
+
+footer a {
+    color: #999;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    /* Mobile responsiveness */
+    body {
+        justify-content: flex-start;
+    }
+
+    .card {
+        width: 90%;
+        margin-top: 120px;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    header {
+        justify-content: space-around;
+    }
+}
