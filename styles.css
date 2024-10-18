@@ -66,3 +66,21 @@ footer {
     width: 100%;
     color: #999;
 }
+
+.icon-link {
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+}
+
+.icon-link img {
+    width: 44px;
+    height: 44px;
+}
+
+.icon-link p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #333;
+}
+
