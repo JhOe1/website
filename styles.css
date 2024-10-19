@@ -85,3 +85,27 @@ footer {
     color: #333;
 }
 
+.icon-link {
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none; /* This removes the underline */
+    color: #333; /* Ensures the text color is uniform */
+}
+
+.icon-link img {
+    width: 50px;
+    height: 50px;
+}
+
+.icon-link p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #333; /* You can change this to match your design */
+}
+
+.icon-link:hover {
+    color: #666; /* Optional: Changes the text color when hovered */
+}
+
+
