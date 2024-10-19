@@ -108,4 +108,15 @@ footer {
     color: #666; /* Optional: Changes the text color when hovered */
 }
 
+/* Remove blue underline and style the links */
+a {
+    text-decoration: none; /* Removes the underline */
+    color: #333; /* Change link color to black (or choose another color) */
+    font-weight: bold; /* Makes the link text bold */
+}
+
+a:hover {
+    color: #007BFF; /* Changes color on hover */
+}
+
 
